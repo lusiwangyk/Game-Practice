@@ -1,6 +1,14 @@
 
 
 var squareOne = document.querySelector("#one");
+squareOne.addEventListener("click",function(){
+    //squareOne.textContext  = "O";
+    console.log(squareOne.style.visibility = "visible");
+})
+squareOne.addEventListener("dblclick",function(){
+    squareOne.textContent = "X";
+})
+
 var squareTwo = document.querySelector("#two");
 var squareThree = document.querySelector("#three");
 
@@ -11,21 +19,10 @@ var squareSix = document.querySelector("#six");
 var squareSeven = document.querySelector("#seven");
 var squareEight = document.querySelector("#eight");
 var squareNine = document.querySelector("#nine");
-var pTag = document.getElementsByTagName("p");
+var thTag = document.getElementsByTagName("th");
 
-squareOne.addEventListener("click",function(){
-    squareOne.style.visibility = "visible";
-   // console.log(squareOne.style.visibility = "visible");
-})
-squareOne.addEventListener("dblclick",function(){
-    squareOne.textContent = "X";
-})
 
-function changeVisibility() {
-    pTag.style.visibility = "visible";
-}
 
 function reStart() {
-    pTag.textContent = "o";
-    pTag.style.visibility = "hidden";
+    thTag.textContent = "";
 }
