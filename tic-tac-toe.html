@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game Practice</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron" style="text-align:center;">
+        <h1 class="display-4">Welcome to Tic Tac Toe!</h1>
+        <br>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="reStart()">Restart</a>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 border border-dark"  id="box" >
+        <div class="row" style="text-align:center;" >
+            <span class="col-md-4 border-right border-dark" style="font-size:80px;"><p id="one" onclick="changeVisibility()" style="visibility:hidden">O</p></span>
+            <span class="col-md-4 border-right border-dark" style="font-size:80px;"><p id="two" style="visibility:hidden">O</p></span>
+            <span class="col-md-4 border-bottom border-dark" style="font-size:80px;"><p id="three" style="visibility:hidden">O</p></span>
+        </div>
+        <div class="row" style="text-align:center;">
+            <span class="col-md-4 border-right border-top border-bottom border-dark" style="font-size:80px;"><p id="four" style="visibility:hidden">O</p></span>
+            <span class="col-md-4 border-right border-top border-bottom border-dark" style="font-size:80px;"><p id="five" style="visibility:hidden">O</p></span>
+            <span class="col-md-4 border-bottom border-dark" style="font-size:80px;"><p id="six" style="visibility:hidden">O</p></span>
+        </div>
+        <div class="row" style="text-align:center;">
+            <span class="col-md-4 border-right border-dark" style="font-size:80px;"><p id="seven" style="visibility:hidden">O</p></span>
+            <span class="col-md-4 border-right border-dark" style="font-size:80px;"><p id="eight" style="visibility:hidden">O</p></span>
+            <span class="col-md-4" style="font-size:80px;"><p id="nine" style="visibility:hidden">O</p></span>
+        </div>
+
+    </div>
+    
+
+    </div>
+
+    <script src="tic-tac-toe.js"></script>
+
+    
+</body>
+</html>
