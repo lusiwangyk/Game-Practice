@@ -1,0 +1,16 @@
+
+  td {
+      height:150px;
+      width:150px;
+      text-align:center;
+      border:5px solid black;
+      font-size:100px;
+  }
+  h4 {
+    font-size:14px;
+    color:red;
+  }
+  span {
+    border:5px solid black;
+    font-size:80px;
+  }

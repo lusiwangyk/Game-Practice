@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game Practice</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbotron" style="text-align:center;">
+        <h1 class="display-4">Welcome to Tic Tac Toe!</h1>
+        <hr class="my-4">
+        <h4>Instruction:</p>
+        <h4>Click the empty space to get "X" or "O": Click once to get "X"; Double Click to get "O".</p>
+        <button id="b" class="btn btn-primary btn-lg" type="button">Restart</button>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div> 
+
+        <!--<table align="center">
+            <tr>
+                <td id="one"></td>
+                <td id="two"></td>
+                <td id="three"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven"></td>
+                <td id="eight"></td>
+                <td id="nine"></td>
+            </tr>
+        </table>
+        -->
+
+        <div class="col-md-4 border" id="box" >
+        <div class="row" style="text-align:center;" >
+            <span class="col-md-4"><div class="game" id="one"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4 border-left border-right"><div class="game" id="two"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4 "><div class="game" id="three"><p style="visibility:hidden">O</p></div></span>
+        </div>
+        <div class="row" style="text-align:center;">
+            <span class="col-md-4 border-top border-bottom"><div class="game" id="four"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4 border-left border-right border-top border-bottom "><div class="game" id="five"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4 border-top border-bottom"><div class="game" id="six"><p style="visibility:hidden">O</p></div></span>
+        </div>
+        <div class="row" style="text-align:center;">
+            <span class="col-md-4"><div class="game" id="seven"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4 border-left border-right"><div class="game" id="eight"><p style="visibility:hidden">O</p></div></span>
+            <span class="col-md-4"><div class="game" id="nine"><p style="visibility:hidden">O</p></div></span>
+        </div>
+        </div> 
+
+    </div>
+    
+    <script src="tic-tac-toe.js"></script>
+
+    
+</body>
+</html>
