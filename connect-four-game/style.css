@@ -1,0 +1,24 @@
+h1{
+    text-align:center;
+    font-size:150px;
+    line-height:20px;
+}
+
+h2{
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+.dot {
+    height:100px;
+    width:100px;
+    background-color:grey;
+    border-radius:50%;
+    display:inline-block;
+    border:5px solid black;
+    
+    
+}
