@@ -19,6 +19,19 @@ h3{
     border-radius:50%;
     display:inline-block;
     border:5px solid black;
-    
-    
 }
+
+table {
+    margin-left:25%;
+}
+
+.field button {
+    background-color:#c0c0c0;
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    margin:1px;
+    border-radius:50%;
+}
+
+
