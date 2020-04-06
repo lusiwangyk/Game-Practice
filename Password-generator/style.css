@@ -1,10 +1,13 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
 header {
     color:white;
     font-size:40px;
     font-style:bold;  
 }
 .container {
-    background-color:blueviolet;
+    background-color:grey;
     padding:30px 50px 30px 50px;
     margin-top:100px;
 }
@@ -22,8 +25,19 @@ p {
     text-align:center;
 }
 
-input {
+#code {
     width:80%;
+}
+
+#lengthbutton {
+    background-color:red;
+    border-style: none;
+    font-style:bold;
+    color:white;
+}
+
+.submit {
+    color:white;
 }
 
 
