@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Game</title>
+</head>
+<body>
+
+    <script>
+        var score = 0;
+        var questionList = [
+            {q: "Does a rainbow have one color?", a: "f"},
+            {q: "Is the Great Wall in China?", a: "t"},
+            {q: "Is honey made by wasps?", a: "f" },
+            {q: "Did Greece originate the Olympic games?", a: "t"},
+            {q: "Does one lobster has 6 legs?", a: "f"},
+            {q: "Does a slug have four noses?", a: "t"},
+            {q: "Is the cheetah fastest land animal?", a: "t"}
+        ]
+            
+        console.log(questionList[0].q);
+        
+
+        for (var i = 0; i < questionList.length; i++) {
+            var answer = confirm(questionList[i].q);
+
+            if (answer == true && questionList[i].a == "t") { 
+                alert("Congratulation! You are right.")
+                score++;
+            }
+            else if (answer == false && questionList[i].a == "f") {
+                alert("Congratulation! You are right.")
+                score++;
+            }
+
+            else if (answer == true && questionList[i].a == "f") {
+                alert("I'm sorry. You're wrong!");
+            }
+            else if (answer == false && questionList[i].a == "t") {
+                alert("I'm sorry. You're wrong!");
+            }
+        }
+        alert("Your score: " + score);
+    </script>
+    
+</body>
+</html>
